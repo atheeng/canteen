@@ -9,7 +9,7 @@ public interface FoodService {
 
     List<Food> getFoodList();
 
-    List<Food> getFoodListForToday(String day);
+    List<Food> getFoodListForToday();
 
     Food updateByForToday(Long foodId);
 

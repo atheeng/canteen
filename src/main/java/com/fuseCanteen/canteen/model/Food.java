@@ -1,10 +1,10 @@
 package com.fuseCanteen.canteen.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fuseCanteen.canteen.dto.FoodCategory;
+import com.fuseCanteen.canteen.util.FoodCategory;
+import lombok.*;
 
 import javax.persistence.*;
-
 @Entity
 public class Food {
     @Id

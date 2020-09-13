@@ -1,11 +1,18 @@
 package com.fuseCanteen.canteen.model;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+
+import javax.persistence.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Employee {
     @Id
@@ -16,6 +23,9 @@ public class Employee {
     private String phoneNumber;
     private String address;
     private String password;
+    @Column(name="user_name", unique=true)
+    private String userName;
+
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "employee_roles",
@@ -24,14 +34,9 @@ public class Employee {
     )
     private Set<Role> roles = new HashSet<>();
 
-    public String getAddress() {
-        return address;
+    public Set<Role> getRoles() {
+        return roles;
     }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
 
     public Long getId() {
         return id;
@@ -65,12 +70,12 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public String getAddress() {
+        return address;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPassword() {
@@ -79,5 +84,19 @@ public class Employee {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

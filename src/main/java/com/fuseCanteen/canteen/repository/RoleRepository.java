@@ -1,6 +1,6 @@
 package com.fuseCanteen.canteen.repository;
 
-import com.fuseCanteen.canteen.dto.Authority;
+import com.fuseCanteen.canteen.util.Authority;
 import com.fuseCanteen.canteen.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

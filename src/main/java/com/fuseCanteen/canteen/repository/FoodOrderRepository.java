@@ -1,6 +1,6 @@
 package com.fuseCanteen.canteen.repository;
 
-import com.fuseCanteen.canteen.dto.OrderStatus;
+import com.fuseCanteen.canteen.util.OrderStatus;
 import com.fuseCanteen.canteen.model.Employee;
 import com.fuseCanteen.canteen.model.FoodOrder;
 import org.springframework.data.jpa.repository.JpaRepository;

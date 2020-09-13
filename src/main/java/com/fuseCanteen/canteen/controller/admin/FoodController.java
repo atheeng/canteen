@@ -1,7 +1,6 @@
 package com.fuseCanteen.canteen.controller.admin;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fuseCanteen.canteen.dto.Response;
+import com.fuseCanteen.canteen.util.Response;
 import com.fuseCanteen.canteen.dto.RestResponseDto;
 import com.fuseCanteen.canteen.model.Food;
 import com.fuseCanteen.canteen.service.FoodService;
@@ -11,8 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
+
 @RequestMapping("/api")
 public class FoodController {
     @Autowired
@@ -21,14 +21,14 @@ public class FoodController {
     private RestResponseDto restResponseDto;
 
     /**
-     * get food for day
-     * @param day
+     * get list food for day
+     * @param
      * @return
      */
-    @GetMapping(path = "/food/list/{day}")
-    public ResponseEntity<RestResponseDto> foodListForToday(@PathVariable String day) {
+    @GetMapping(path = "/food/list/day")
+    public ResponseEntity<RestResponseDto> foodListForToday() {
         try {
-            List<Food> foodList = foodservice.getFoodListForToday(day);
+            List<Food> foodList = foodservice.getFoodListForToday();
             if (foodList.size() == 0) {
                 restResponseDto.setResponse(Response.NO_INFORMATION);
                 restResponseDto.setMessage("Food list is not available");

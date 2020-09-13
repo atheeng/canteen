@@ -1,4 +1,4 @@
-package com.fuseCanteen.canteen.dto;
+package com.fuseCanteen.canteen.util;
 
 public enum FoodCategory {
     BREAKFAST("BREAKFAST"),

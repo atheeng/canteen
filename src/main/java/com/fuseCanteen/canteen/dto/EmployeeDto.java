@@ -9,7 +9,7 @@ public class EmployeeDto {
     private String phoneNumber;
     private String address;
     private String roles;
-
+    private String userName;
 
     public Long getId() {
         return id;
@@ -17,14 +17,6 @@ public class EmployeeDto {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getFirstName() {
@@ -35,12 +27,19 @@ public class EmployeeDto {
         this.firstName = firstName;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getLastName() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
-
         this.lastName = lastName;
     }
 
@@ -66,5 +65,13 @@ public class EmployeeDto {
 
     public void setRoles(String roles) {
         this.roles = roles;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

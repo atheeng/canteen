@@ -1,12 +1,15 @@
-package com.fuseCanteen.canteen.dto;
+package com.fuseCanteen.canteen.util;
 
-public enum Authority {
-    ADMIN("ADMIN"),
-    EMPLOYEE("EMPLOYEE");
+public enum OrderStatus {
+    PENDING("PENDING"),
+    IN_PROCESS("IN PROCESS"),
+    READY("READY"),
+    CANCEL("CANCEL"),
+    SCHEDULE("SCHEDULE");
 
     public final String value;
 
-    Authority(String value) {
+    OrderStatus(String value) {
         this.value = value;
     }
 
@@ -19,10 +22,10 @@ public enum Authority {
         return value;
     }
 
-    public static Authority getEnum(String value) {
+    public static OrderStatus getEnum(String value) {
         if (value == null)
             throw new IllegalArgumentException();
-        for (Authority v : values())
+        for (OrderStatus v : values())
             if (value.equalsIgnoreCase(v.getValue()))
                 return v;
         throw new IllegalArgumentException();

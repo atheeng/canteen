@@ -1,15 +1,12 @@
-package com.fuseCanteen.canteen.dto;
+package com.fuseCanteen.canteen.util;
 
-public enum Response {
-    SUCCESS("SUCCESS"),
-    FAILURE("FAILURE"),
-    BAD_REQUEST("BAD REQUEST"),
-    NO_INFORMATION("NO INFORMATION"),
-    VALIDATION_ERROR("VALIDATION ERROR");
+public enum Authority {
+    ROLE_ADMIN("ROLE ADMIN"),
+    ROLE_EMPLOYEE("ROLE EMPLOYEE");
 
     public final String value;
 
-    Response(String value) {
+    Authority(String value) {
         this.value = value;
     }
 
@@ -22,10 +19,10 @@ public enum Response {
         return value;
     }
 
-    public static Response getEnum(String value) {
+    public static Authority getEnum(String value) {
         if (value == null)
             throw new IllegalArgumentException();
-        for (Response v : values())
+        for (Authority v : values())
             if (value.equalsIgnoreCase(v.getValue()))
                 return v;
         throw new IllegalArgumentException();

@@ -1,10 +1,9 @@
 package com.fuseCanteen.canteen.controller.employee;
 
 import com.fuseCanteen.canteen.dto.FoodOrderDto;
-import com.fuseCanteen.canteen.dto.Response;
+import com.fuseCanteen.canteen.util.Response;
 import com.fuseCanteen.canteen.dto.RestResponseDto;
 import com.fuseCanteen.canteen.model.FoodOrder;
-import com.fuseCanteen.canteen.repository.FoodOrderRepository;
 import com.fuseCanteen.canteen.service.FoodOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,5 +1,6 @@
 package com.fuseCanteen.canteen.dto;
 
+import com.fuseCanteen.canteen.util.Response;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,6 +1,6 @@
 package com.fuseCanteen.canteen.model;
 
-import com.fuseCanteen.canteen.dto.Authority;
+import com.fuseCanteen.canteen.util.Authority;
 
 import javax.persistence.*;
 

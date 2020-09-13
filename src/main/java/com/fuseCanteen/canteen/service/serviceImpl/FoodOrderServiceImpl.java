@@ -1,7 +1,7 @@
 package com.fuseCanteen.canteen.service.serviceImpl;
 
 import com.fuseCanteen.canteen.dto.FoodOrderDto;
-import com.fuseCanteen.canteen.dto.OrderStatus;
+import com.fuseCanteen.canteen.util.OrderStatus;
 import com.fuseCanteen.canteen.model.Employee;
 import com.fuseCanteen.canteen.model.Food;
 import com.fuseCanteen.canteen.model.FoodOrder;

@@ -1,7 +1,7 @@
 package com.fuseCanteen.canteen.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fuseCanteen.canteen.dto.OrderStatus;
+import com.fuseCanteen.canteen.util.OrderStatus;
 
 import javax.persistence.*;
 import java.time.LocalDate;

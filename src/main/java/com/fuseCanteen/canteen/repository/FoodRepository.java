@@ -1,6 +1,6 @@
 package com.fuseCanteen.canteen.repository;
 
-import com.fuseCanteen.canteen.dto.FoodCategory;
+import com.fuseCanteen.canteen.util.FoodCategory;
 import com.fuseCanteen.canteen.model.Food;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

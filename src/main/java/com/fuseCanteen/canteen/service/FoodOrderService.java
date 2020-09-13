@@ -1,8 +1,6 @@
 package com.fuseCanteen.canteen.service;
 
 import com.fuseCanteen.canteen.dto.FoodOrderDto;
-import com.fuseCanteen.canteen.dto.OrderStatus;
-import com.fuseCanteen.canteen.model.Food;
 import com.fuseCanteen.canteen.model.FoodOrder;
 
 import java.util.List;

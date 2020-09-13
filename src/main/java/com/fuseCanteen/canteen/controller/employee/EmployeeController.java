@@ -1,7 +1,7 @@
 package com.fuseCanteen.canteen.controller.employee;
 
 import com.fuseCanteen.canteen.dto.EmployeeDto;
-import com.fuseCanteen.canteen.dto.Response;
+import com.fuseCanteen.canteen.util.Response;
 import com.fuseCanteen.canteen.dto.RestResponseDto;
 import com.fuseCanteen.canteen.model.Employee;
 import com.fuseCanteen.canteen.service.EmployeeService;

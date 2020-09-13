@@ -32,12 +32,8 @@ public class FoodServiceImpl implements FoodService {
     }
 
     @Override
-    public List<Food> getFoodListForToday(String day) {
-        if (day == dtf.format(now))
-            return foodRepository.findAllByFoodDay(dtf.format(now));
-        else
-            return foodRepository.findAllByFoodDay(day);
-
+    public List<Food> getFoodListForToday() {
+        return foodRepository.findAllByFoodDay(dtf.format(now));
     }
 
     @Override

@@ -1,15 +1,15 @@
-package com.fuseCanteen.canteen.dto;
+package com.fuseCanteen.canteen.util;
 
-public enum OrderStatus {
-    PENDING("PENDING"),
-    IN_PROCESS("IN PROCESS"),
-    READY("READY"),
-    CANCEL("CANCEL"),
-    SCHEDULE("SCHEDULE");
+public enum Response {
+    SUCCESS("SUCCESS"),
+    FAILURE("FAILURE"),
+    BAD_REQUEST("BAD REQUEST"),
+    NO_INFORMATION("NO INFORMATION"),
+    VALIDATION_ERROR("VALIDATION ERROR");
 
     public final String value;
 
-    OrderStatus(String value) {
+    Response(String value) {
         this.value = value;
     }
 
@@ -22,10 +22,10 @@ public enum OrderStatus {
         return value;
     }
 
-    public static OrderStatus getEnum(String value) {
+    public static Response getEnum(String value) {
         if (value == null)
             throw new IllegalArgumentException();
-        for (OrderStatus v : values())
+        for (Response v : values())
             if (value.equalsIgnoreCase(v.getValue()))
                 return v;
         throw new IllegalArgumentException();
