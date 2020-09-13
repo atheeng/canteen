@@ -2,18 +2,20 @@ com/fuseCanteen/canteen/repository/FoodOrderRepository.java
  com.fuseCanteen.canteen.repository.FoodOrderRepository
 com/fuseCanteen/canteen/repository/FoodRepository.java
  com.fuseCanteen.canteen.repository.FoodRepository
+com/fuseCanteen/canteen/config/SecurityConfig.java
+ com.fuseCanteen.canteen.config.SecurityConfig
+com/fuseCanteen/canteen/controller/HomeController.java
+ com.fuseCanteen.canteen.controller.HomeController
 com/fuseCanteen/canteen/controller/employee/FoodOrderController.java
  com.fuseCanteen.canteen.controller.employee.FoodOrderController
+com/fuseCanteen/canteen/util/Authority.java
+ com.fuseCanteen.canteen.util.Authority
 com/fuseCanteen/canteen/service/FoodOrderService.java
  com.fuseCanteen.canteen.service.FoodOrderService
-com/fuseCanteen/canteen/dto/DbInit.java
- com.fuseCanteen.canteen.dto.DbInit
-com/fuseCanteen/canteen/dto/Authority.java
- com.fuseCanteen.canteen.dto.Authority
 com/fuseCanteen/canteen/repository/EmployeeRepository.java
  com.fuseCanteen.canteen.repository.EmployeeRepository
-com/fuseCanteen/canteen/dto/Response.java
- com.fuseCanteen.canteen.dto.Response
+com/fuseCanteen/canteen/dto/AuthRequest.java
+ com.fuseCanteen.canteen.dto.AuthRequest
 com/fuseCanteen/canteen/controller/admin/FoodController.java
  com.fuseCanteen.canteen.controller.admin.FoodController
 com/fuseCanteen/canteen/dto/FoodOrderDto.java
@@ -22,6 +24,8 @@ com/fuseCanteen/canteen/service/serviceImpl/EmployeeServiceImpl.java
  com.fuseCanteen.canteen.service.serviceImpl.EmployeeServiceImpl
 com/fuseCanteen/canteen/service/serviceImpl/FoodOrderServiceImpl.java
  com.fuseCanteen.canteen.service.serviceImpl.FoodOrderServiceImpl
+com/fuseCanteen/canteen/util/JwtUtil.java
+ com.fuseCanteen.canteen.util.JwtUtil
 com/fuseCanteen/canteen/model/Role.java
  com.fuseCanteen.canteen.model.Role
 com/fuseCanteen/canteen/dto/RestResponseDto.java
@@ -30,25 +34,35 @@ com/fuseCanteen/canteen/model/Employee.java
  com.fuseCanteen.canteen.model.Employee
 com/fuseCanteen/canteen/model/Food.java
  com.fuseCanteen.canteen.model.Food
+com/fuseCanteen/canteen/util/FoodCategory.java
+ com.fuseCanteen.canteen.util.FoodCategory
 com/fuseCanteen/canteen/controller/employee/EmployeeController.java
  com.fuseCanteen.canteen.controller.employee.EmployeeController
+com/fuseCanteen/canteen/service/DbInit.java
+ com.fuseCanteen.canteen.service.DbInit
 com/fuseCanteen/canteen/service/FoodService.java
  com.fuseCanteen.canteen.service.FoodService
-com/fuseCanteen/canteen/dto/FoodCategory.java
- com.fuseCanteen.canteen.dto.FoodCategory
 com/fuseCanteen/canteen/model/FoodOrder.java
  com.fuseCanteen.canteen.model.FoodOrder
 com/fuseCanteen/canteen/dto/EmployeeDto.java
  com.fuseCanteen.canteen.dto.EmployeeDto
-com/fuseCanteen/canteen/dto/OrderStatus.java
- com.fuseCanteen.canteen.dto.OrderStatus
 com/fuseCanteen/canteen/repository/RoleRepository.java
  com.fuseCanteen.canteen.repository.RoleRepository
+com/fuseCanteen/canteen/service/CustomUserDetailsService.java
+ com.fuseCanteen.canteen.service.CustomUserDetailsService
+com/fuseCanteen/canteen/model/UserPrincipal.java
+ com.fuseCanteen.canteen.model.UserPrincipal
 com/fuseCanteen/canteen/ServletInitializer.java
  com.fuseCanteen.canteen.ServletInitializer
+com/fuseCanteen/canteen/util/OrderStatus.java
+ com.fuseCanteen.canteen.util.OrderStatus
 com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.java
  com.fuseCanteen.canteen.service.serviceImpl.FoodServiceImpl
 com/fuseCanteen/canteen/CanteenApplication.java
  com.fuseCanteen.canteen.CanteenApplication
+com/fuseCanteen/canteen/util/Response.java
+ com.fuseCanteen.canteen.util.Response
+com/fuseCanteen/canteen/filter/JwtFilter.java
+ com.fuseCanteen.canteen.filter.JwtFilter
 com/fuseCanteen/canteen/service/EmployeeService.java
  com.fuseCanteen.canteen.service.EmployeeService
