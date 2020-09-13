@@ -60,6 +60,8 @@ com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.java
  com.fuseCanteen.canteen.service.serviceImpl.FoodServiceImpl
 com/fuseCanteen/canteen/CanteenApplication.java
  com.fuseCanteen.canteen.CanteenApplication
+com/fuseCanteen/canteen/config/SwaggerConfig.java
+ com.fuseCanteen.canteen.config.SwaggerConfig
 com/fuseCanteen/canteen/util/Response.java
  com.fuseCanteen.canteen.util.Response
 com/fuseCanteen/canteen/filter/JwtFilter.java
