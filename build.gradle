@@ -30,6 +30,10 @@ dependencies {
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    // https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner
+    testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.6.2'
+
 
 }
 

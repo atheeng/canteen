@@ -5,6 +5,7 @@ public enum Response {
     FAILURE("FAILURE"),
     BAD_REQUEST("BAD REQUEST"),
     NO_INFORMATION("NO INFORMATION"),
+    ALREADY("ALREADY"),
     VALIDATION_ERROR("VALIDATION ERROR");
 
     public final String value;

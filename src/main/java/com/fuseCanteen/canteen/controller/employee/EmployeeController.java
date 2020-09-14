@@ -1,10 +1,10 @@
 package com.fuseCanteen.canteen.controller.employee;
 
 import com.fuseCanteen.canteen.dto.EmployeeDto;
-import com.fuseCanteen.canteen.util.Response;
 import com.fuseCanteen.canteen.dto.RestResponseDto;
 import com.fuseCanteen.canteen.model.Employee;
 import com.fuseCanteen.canteen.service.EmployeeService;
+import com.fuseCanteen.canteen.util.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -123,6 +123,14 @@ public class EmployeeController {
             return new ResponseEntity<>(restResponseDto, HttpStatus.BAD_REQUEST);
         }
         try {
+            Employee existEmployee=employeeService.getEmployeeByUserName(employeeDto.getUserName());
+            if(existEmployee!=null){
+                restResponseDto.setResponse(Response.ALREADY);
+                restResponseDto.setMessage("Employee  is already exist");
+                restResponseDto.setDetail(existEmployee);
+                return new ResponseEntity<>(restResponseDto, HttpStatus.FOUND);
+            }
+
             Employee data = employeeService.save(employeeDto);
             if (data.getFirstName().isEmpty()) {
                 restResponseDto.setResponse(Response.NO_INFORMATION);

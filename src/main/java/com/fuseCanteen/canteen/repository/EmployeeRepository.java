@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     Employee findById(long id);
     Employee findAllByUserName(String username);
+
+    Employee findByUserName(String username);
 }

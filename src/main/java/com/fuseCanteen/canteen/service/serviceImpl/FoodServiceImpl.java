@@ -62,4 +62,9 @@ public class FoodServiceImpl implements FoodService {
         return foodRepository.getById(id);
     }
 
+    @Override
+    public Food getByName(String foodName) {
+        return foodRepository.findByName(foodName);
+    }
+
 }

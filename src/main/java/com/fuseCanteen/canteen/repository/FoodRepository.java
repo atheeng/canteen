@@ -12,4 +12,6 @@ public interface FoodRepository extends JpaRepository<Food,Long> {
     Food getById(Long id);
     List<Food> findAllByFoodCategory(FoodCategory foodCategory);
     List<Food> findAllByFoodDay(String date);
+
+    Food findByName(String foodName);
 }

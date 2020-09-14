@@ -74,4 +74,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee getEmployeeById(Long id) {
         return employeeRepository.findById(id.longValue());
     }
+
+    @Override
+    public Employee getEmployeeByUserName(String username) {
+        return employeeRepository.findByUserName(username);
+    }
 }

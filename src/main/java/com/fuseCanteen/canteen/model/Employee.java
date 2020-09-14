@@ -4,10 +4,9 @@ package com.fuseCanteen.canteen.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.GrantedAuthority;
+import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 @Data
@@ -18,8 +17,11 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NonNull
     private String firstName;
+    @NonNull
     private String lastName;
+    @NonNull
     private String phoneNumber;
     private String address;
     private String password;

@@ -111,6 +111,13 @@ public class FoodController {
     @PostMapping(path = "/food")
     public ResponseEntity<RestResponseDto> saveFood(@RequestBody Food food) {
         try {
+            Food existingFood=foodservice.getByName(food.getName());
+            if(existingFood !=null){
+                restResponseDto.setResponse(Response.ALREADY);
+                restResponseDto.setMessage("Food  is already exist");
+                restResponseDto.setDetail(existingFood);
+                return new ResponseEntity<>(restResponseDto, HttpStatus.FOUND);
+            }
             Food data = foodservice.save(food);
             if (data.getName().isEmpty()) {
                 restResponseDto.setResponse(Response.NO_INFORMATION);
@@ -140,6 +147,7 @@ public class FoodController {
     @PutMapping(path = "/food")
     public ResponseEntity<RestResponseDto> updateOrSaveFood(@RequestBody Food food) {
         try {
+
             Food data = foodservice.save(food);
             if (data.getName().isEmpty()) {
                 restResponseDto.setResponse(Response.NO_INFORMATION);
@@ -163,7 +171,6 @@ public class FoodController {
 
     /**
      * update food day by food id
-     * save to updateOrSaveFood
      * @param foodId
      * @return
      */
@@ -179,14 +186,14 @@ public class FoodController {
                 return new ResponseEntity<>(restResponseDto, HttpStatus.BAD_REQUEST);
             } else {
                 restResponseDto.setResponse(Response.SUCCESS);
-                restResponseDto.setMessage("Successfully update with Id " + foodId);
+                restResponseDto.setMessage("Successfully update for day with Id " + foodId);
                 restResponseDto.setDetail(foodId);
                 return ResponseEntity.ok(restResponseDto);
             }
 
         } catch (Exception e) {
             restResponseDto.setResponse(Response.FAILURE);
-            restResponseDto.setMessage("Food is not update by Id " + foodId);
+            restResponseDto.setMessage("Food is not update for day by Id " + foodId);
             restResponseDto.setDetail(null);
             return new ResponseEntity<>(restResponseDto, HttpStatus.EXPECTATION_FAILED);
         }

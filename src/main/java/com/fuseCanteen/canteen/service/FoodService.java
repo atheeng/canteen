@@ -18,4 +18,5 @@ public interface FoodService {
     boolean delete(Long id);
 
     Food getFoodById(Long id);
+    Food getByName(String foodName);
 }

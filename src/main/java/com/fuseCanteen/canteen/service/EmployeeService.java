@@ -15,4 +15,5 @@ public interface EmployeeService {
     Employee update(EmployeeDto employeeDto);
 
     Employee getEmployeeById(Long id);
+    Employee getEmployeeByUserName(String username);
 }
