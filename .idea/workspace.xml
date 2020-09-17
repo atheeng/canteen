@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00defd54-b2b1-4026-a29a-71142bfa4f70" name="Default Changelist" comment="">
+    <list default="true" id="00defd54-b2b1-4026-a29a-71142bfa4f70" name="Default Changelist" comment="validate existing employee and food final jwt">
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,30 +16,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/admin/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/admin/FoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/employee/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/employee/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/model/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/repository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/repository/EmployeeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/repository/FoodRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/repository/FoodRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/FoodService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/serviceImpl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/serviceImpl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/employee/FoodOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/controller/employee/FoodOrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/util/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fuseCanteen/canteen/util/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/fuseCanteen/canteen/CanteenApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/fuseCanteen/canteen/CanteenApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/admin/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/admin/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/repository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/repository/FoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/repository/FoodRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/util/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/util/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fuseCanteen/canteen/CanteenApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fuseCanteen/canteen/CanteenApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/FoodOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/FoodOrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +301,9 @@
       <workItem from="1599960003325" duration="3154000" />
       <workItem from="1599996069499" duration="12214000" />
       <workItem from="1600046088650" duration="5032000" />
-      <workItem from="1600054629660" duration="2083000" />
+      <workItem from="1600054629660" duration="4177000" />
+      <workItem from="1600067351089" duration="107000" />
+      <workItem from="1600335071347" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="canteen management system operation of employee role,food menu,food order">
       <created>1599820881657</created>
@@ -365,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600009085478</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="validate existing employee and food final jwt">
+      <created>1600056982029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600056982030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +365,8 @@
     <MESSAGE value="swagger,scheduling for schedule and jwt with role simple filter" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="minor changes swagger view" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes swagger view" />
+    <MESSAGE value="validate existing employee and food final jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate existing employee and food final jwt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="58" key="#CanteenApplicationTests" timestamp="1600053908681">
@@ -407,66 +397,66 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="450" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.860@0.0.1440.860" timestamp="1599707941249" />
-    <state x="386" y="113" width="775" height="747" key="#xdebugger.evaluate" timestamp="1600002371663">
+    <state x="386" y="113" width="775" height="747" key="#xdebugger.evaluate" timestamp="1600336485161">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="386" y="113" width="775" height="747" key="#xdebugger.evaluate/0.0.1440.860@0.0.1440.860" timestamp="1600002371663" />
-    <state x="345" y="27" key="CommitChangelistDialog2" timestamp="1600009083622">
+    <state x="386" y="113" width="775" height="747" key="#xdebugger.evaluate/0.0.1440.860@0.0.1440.860" timestamp="1600336485161" />
+    <state x="345" y="27" key="CommitChangelistDialog2" timestamp="1600067375696">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="345" y="27" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1600009083622" />
-    <state width="529" height="438" key="DebuggerActiveHint" timestamp="1600002355029">
+    <state x="345" y="27" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1600067375696" />
+    <state width="529" height="438" key="DebuggerActiveHint" timestamp="1600335693414">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="529" height="438" key="DebuggerActiveHint/0.0.1440.860@0.0.1440.860" timestamp="1600002355029" />
-    <state width="1397" height="280" key="GridCell.Tab.0.bottom" timestamp="1600056645985">
+    <state width="529" height="438" key="DebuggerActiveHint/0.0.1440.860@0.0.1440.860" timestamp="1600335693414" />
+    <state width="1397" height="216" key="GridCell.Tab.0.bottom" timestamp="1600336579876">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600056645985" />
-    <state width="1397" height="280" key="GridCell.Tab.0.center" timestamp="1600056645985">
+    <state width="1397" height="216" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600336579876" />
+    <state width="1397" height="216" key="GridCell.Tab.0.center" timestamp="1600336579876">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1600056645985" />
-    <state width="1397" height="280" key="GridCell.Tab.0.left" timestamp="1600056645985">
+    <state width="1397" height="216" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1600336579876" />
+    <state width="1397" height="216" key="GridCell.Tab.0.left" timestamp="1600336579876">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1600056645985" />
-    <state width="1397" height="280" key="GridCell.Tab.0.right" timestamp="1600056645985">
+    <state width="1397" height="216" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1600336579876" />
+    <state width="1397" height="216" key="GridCell.Tab.0.right" timestamp="1600336579876">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1600056645985" />
-    <state width="1397" height="487" key="GridCell.Tab.1.bottom" timestamp="1600056645855">
+    <state width="1397" height="216" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1600336579876" />
+    <state width="1397" height="216" key="GridCell.Tab.1.bottom" timestamp="1600336607077">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="487" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600056645855" />
-    <state width="1397" height="487" key="GridCell.Tab.1.center" timestamp="1600056645855">
+    <state width="1397" height="216" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600336607077" />
+    <state width="1397" height="216" key="GridCell.Tab.1.center" timestamp="1600336607077">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="487" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1600056645855" />
-    <state width="1397" height="487" key="GridCell.Tab.1.left" timestamp="1600056645855">
+    <state width="1397" height="216" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1600336607077" />
+    <state width="1397" height="216" key="GridCell.Tab.1.left" timestamp="1600336607077">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="487" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1600056645855" />
-    <state width="1397" height="487" key="GridCell.Tab.1.right" timestamp="1600056645855">
+    <state width="1397" height="216" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1600336607077" />
+    <state width="1397" height="216" key="GridCell.Tab.1.right" timestamp="1600336607077">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="487" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1600056645855" />
-    <state width="1397" height="280" key="GridCell.Tab.2.bottom" timestamp="1600056645832">
+    <state width="1397" height="216" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1600336607077" />
+    <state width="1397" height="216" key="GridCell.Tab.2.bottom" timestamp="1600336579748">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.2.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600056645832" />
-    <state width="1397" height="280" key="GridCell.Tab.2.center" timestamp="1600056645832">
+    <state width="1397" height="216" key="GridCell.Tab.2.bottom/0.0.1440.860@0.0.1440.860" timestamp="1600336579748" />
+    <state width="1397" height="216" key="GridCell.Tab.2.center" timestamp="1600336579748">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.2.center/0.0.1440.860@0.0.1440.860" timestamp="1600056645832" />
-    <state width="1397" height="280" key="GridCell.Tab.2.left" timestamp="1600056645831">
+    <state width="1397" height="216" key="GridCell.Tab.2.center/0.0.1440.860@0.0.1440.860" timestamp="1600336579748" />
+    <state width="1397" height="216" key="GridCell.Tab.2.left" timestamp="1600336579748">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.2.left/0.0.1440.860@0.0.1440.860" timestamp="1600056645831" />
-    <state width="1397" height="280" key="GridCell.Tab.2.right" timestamp="1600056645832">
+    <state width="1397" height="216" key="GridCell.Tab.2.left/0.0.1440.860@0.0.1440.860" timestamp="1600336579748" />
+    <state width="1397" height="216" key="GridCell.Tab.2.right" timestamp="1600336579748">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1397" height="280" key="GridCell.Tab.2.right/0.0.1440.860@0.0.1440.860" timestamp="1600056645832" />
+    <state width="1397" height="216" key="GridCell.Tab.2.right/0.0.1440.860@0.0.1440.860" timestamp="1600336579748" />
     <state x="551" y="142" key="RollbackChangesDialog" timestamp="1600048033603">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -475,10 +465,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="221" y="11" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1600054571661" />
-    <state x="312" y="164" key="Vcs.Push.Dialog.v2" timestamp="1600009094730">
+    <state x="312" y="164" key="Vcs.Push.Dialog.v2" timestamp="1600067388093">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="164" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1600009094730" />
+    <state x="312" y="164" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1600067388093" />
     <state width="728" height="438" key="XDebugger.FullValuePopup" timestamp="1599925144414">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -532,6 +522,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/FoodOrderServiceImpl.java</url>
           <line>72</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/service/serviceImpl/FoodServiceImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/FoodOrderController.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fuseCanteen/canteen/controller/employee/FoodOrderController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

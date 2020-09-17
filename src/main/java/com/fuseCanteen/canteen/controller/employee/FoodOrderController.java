@@ -57,7 +57,7 @@ public class FoodOrderController {
      * for get order list by status
      */
 
-    @GetMapping(value = "/foodOrder/{status}")
+    @GetMapping(value = "/foodOrder/status/{status}")
     public  ResponseEntity<RestResponseDto> getFoodOrderListByStatus(@PathVariable String status) {
         try{
             List<FoodOrder> foodOrderList = foodOrderService.getAllFoodOrderByOrderStatus(status);
@@ -86,7 +86,7 @@ public class FoodOrderController {
      * @param employeeId
      * @return
      */
-    @GetMapping(value = "/foodOrder/{employeeId}")
+    @GetMapping(value = "/foodOrder/employee/{employeeId}")
     public  ResponseEntity<RestResponseDto> getFoodOrderListByEmployee(@PathVariable Long employeeId) {
         try{
             List<FoodOrder> foodOrderList = foodOrderService.getAllFoodOrderByEmployeeId(employeeId);
@@ -118,7 +118,7 @@ public class FoodOrderController {
     @GetMapping(value = "/foodOrder/{orderDate}")
     public  ResponseEntity<RestResponseDto> getFoodOrderListByOrderDate(@PathVariable String orderDate) {
         try{
-            List<FoodOrder> foodOrderList = foodOrderService.getAllFoodOrderByOrderStatus(orderDate);
+            List<FoodOrder> foodOrderList = foodOrderService.getAllFoodOrderByOrderDate(orderDate);
             if(foodOrderList.isEmpty()){
                 restResponseDto.setResponse(Response.NO_INFORMATION);
                 restResponseDto.setMessage("food order list not found by orderDate "+orderDate);

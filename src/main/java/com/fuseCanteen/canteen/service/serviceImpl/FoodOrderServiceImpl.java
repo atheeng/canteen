@@ -57,7 +57,7 @@ public class FoodOrderServiceImpl implements FoodOrderService {
 
     @Override
     public List<FoodOrder> getAllFoodOrderByEmployeeId(Long id) {
-        Employee employee=employeeRepository.getOne(id);
+        Employee employee = employeeRepository.findById(id.longValue());
         return foodOrderRepository.findAllByEmployee(employee);
     }
 
