@@ -12,6 +12,8 @@ com/fuseCanteen/canteen/util/Authority.java
  com.fuseCanteen.canteen.util.Authority
 com/fuseCanteen/canteen/service/FoodOrderService.java
  com.fuseCanteen.canteen.service.FoodOrderService
+com/fuseCanteen/canteen/service/EmployeeService.java
+ com.fuseCanteen.canteen.service.EmployeeService
 com/fuseCanteen/canteen/repository/EmployeeRepository.java
  com.fuseCanteen.canteen.repository.EmployeeRepository
 com/fuseCanteen/canteen/dto/AuthRequest.java
@@ -64,5 +66,5 @@ com/fuseCanteen/canteen/util/Response.java
  com.fuseCanteen.canteen.util.Response
 com/fuseCanteen/canteen/filter/JwtFilter.java
  com.fuseCanteen.canteen.filter.JwtFilter
-com/fuseCanteen/canteen/service/EmployeeService.java
- com.fuseCanteen.canteen.service.EmployeeService
+com/fuseCanteen/canteen/service/Scheduler.java
+ com.fuseCanteen.canteen.service.Scheduler
