@@ -68,7 +68,14 @@ public class FoodOrderServiceImpl implements FoodOrderService {
         Employee employee = employeeRepository.findById(foodOrderDto.getEmployee().longValue());
         Food food = foodRepository.getById(foodOrderDto.getFood());
         foodOrder.setEmployee(employee);
-        foodOrder.setScheduleDate(foodOrderDto.getScheduleDate());
+        String getSchedul=foodOrderDto.getScheduleDate();
+        if(getSchedul==null){
+            getSchedul="";
+        }
+        else {
+            getSchedul=foodOrderDto.getScheduleDate();
+        }
+        foodOrder.setScheduleDate(getSchedul);
         foodOrder.setFood(food);
         foodOrder.setOrderStatus(OrderStatus.getEnum(foodOrderDto.getOrderStatus()));
         foodOrder.setOrderDate(foodOrderDto.getOrderDate());
