@@ -1,0 +1,2 @@
+com/fuseCanteen/canteen/CanteenApplicationTests.java
+ com.fuseCanteen.canteen.CanteenApplicationTests
